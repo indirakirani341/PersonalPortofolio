@@ -1,163 +1,152 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script src="https://cdn.tailwindcss.com"></script>
-        <title>Mie Gacoan</title>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Portofolio | [Namamu]</title>
 
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
 
-    
-    </head>
+<body class="font-[Poppins] text-gray-800">
 
-    <body>
-        <header class="main-header">
-            <!-- logo -->
-            <div class="logo"></div>
+  <!-- HEADER -->
+  <header class="main-header bg-black text-white flex justify-between items-center px-6 py-4 fixed w-full top-0 z-50 shadow-md">
+    <div class="logo text-2xl font-bold text-yellow-400">[Namamu]</div>
 
-            <!-- navigation menu -->
-                <nav class="flex">
-                    <a class="nav-link" href="#home-page">Home</a> 
-                    <a class="nav-link" href="#our-profile-page">Our Profile</a>
-                    <a class="nav-link" href="#our-menu-page">Our Menu</a>
-                    <a class="nav-link" href="#massage-us-page">Massage Us</a>
-                </nav>
-        </header>
+    <nav class="flex space-x-6">
+      <a class="nav-link hover:text-yellow-400" href="#home">Home</a>
+      <a class="nav-link hover:text-yellow-400" href="#about">About</a>
+      <a class="nav-link hover:text-yellow-400" href="#skills">Skills</a>
+      <a class="nav-link hover:text-yellow-400" href="#projects">Projects</a>
+      <a class="nav-link hover:text-yellow-400" href="#contact">Contact</a>
+    </nav>
+  </header>
 
-    <!-- main content -->
-        <main>
+  <!-- MAIN CONTENT -->
+  <main class="mt-[70px]">
 
-            <!-- Home Page -->
-            <section class="relative w-full h-[60vh] sm:h-[80vh] overflow-hidden flex items-center justify-center text-center">
-                <img src="assets/img/gedung.jpg" 
-                    alt="Mie Gacoan" 
-                    class="absolute inset-0 w-full h-full object-cover" />
+    <!-- HOME SECTION -->
+    <section id="home" class="relative w-full h-[80vh] flex items-center justify-center text-center overflow-hidden">
+      <img src="assets/img/bg-home.jpg" alt="Background" class="absolute inset-0 w-full h-full object-cover opacity-40">
 
-               <div id="welcome-speech"></div>
+      <div id="welcome-speech" class="relative z-10">
+        <!-- Akan diisi via script.js -->
+      </div>
 
-                <a href="https://www.instagram.com/mie.gacoan/" 
-                    target="_blank" 
-                    class="absolute bottom-4 right-4 bg-pink-600 hover:bg-pink-700 text-white px-3 py-2 rounded-lg text-sm sm:text-base">
-                    <i class="fa-brands fa-instagram mr-1"></i> Instagram
-                </a>
-            </section>
+      <a href="https://www.instagram.com/" target="_blank"
+        class="absolute bottom-6 right-6 bg-pink-600 hover:bg-pink-700 text-white px-3 py-2 rounded-lg text-sm">
+        <i class="fa-brands fa-instagram mr-1"></i> Instagram
+      </a>
+    </section>
 
+    <!-- ABOUT SECTION -->
+    <section id="about" class="min-h-[500px] text-center px-6 py-12 bg-black text-white">
+      <h2 class="text-3xl font-bold text-yellow-500 mb-4">Tentang Saya</h2>
+      <p class="max-w-2xl mx-auto text-gray-300 mb-4">
+        Halo! Saya <b>[Namamu]</b>, seorang <b>[profesi kamu]</b> yang memiliki passion di dunia <b>[bidang kamu]</b>.
+        Saya suka membuat desain dan website yang menarik, fungsional, serta memiliki pengalaman pengguna yang baik.
+      </p>
+      <p class="max-w-2xl mx-auto text-gray-300">
+        Saya percaya bahwa teknologi dan kreativitas bisa berjalan beriringan untuk menciptakan solusi yang keren dan bermanfaat.
+      </p>
+    </section>
 
+    <!-- SKILLS SECTION -->
+    <section id="skills" class="min-h-[400px] px-6 py-12 bg-gradient-to-b from-black to-gray-900 text-white text-center">
+      <h2 class="text-3xl font-bold text-yellow-500 mb-6">Keahlian Saya</h2>
+      <div class="flex flex-wrap justify-center gap-6 max-w-3xl mx-auto">
+        <div class="skill-card bg-white/10 border border-yellow-400 p-6 rounded-xl w-[200px] shadow-md">
+          <i class="fa-brands fa-html5 text-4xl text-orange-500 mb-3"></i>
+          <h3 class="font-semibold">HTML</h3>
+        </div>
+        <div class="skill-card bg-white/10 border border-yellow-400 p-6 rounded-xl w-[200px] shadow-md">
+          <i class="fa-brands fa-css3-alt text-4xl text-blue-400 mb-3"></i>
+          <h3 class="font-semibold">CSS</h3>
+        </div>
+        <div class="skill-card bg-white/10 border border-yellow-400 p-6 rounded-xl w-[200px] shadow-md">
+          <i class="fa-brands fa-js text-4xl text-yellow-300 mb-3"></i>
+          <h3 class="font-semibold">JavaScript</h3>
+        </div>
+        <div class="skill-card bg-white/10 border border-yellow-400 p-6 rounded-xl w-[200px] shadow-md">
+          <i class="fa-brands fa-php text-4xl text-indigo-300 mb-3"></i>
+          <h3 class="font-semibold">PHP</h3>
+        </div>
+      </div>
+    </section>
 
+    <!-- PROJECTS SECTION -->
+    <section id="projects" class="min-h-[500px] text-center px-6 py-12 bg-black text-white">
+      <h2 class="text-3xl font-bold text-yellow-500 mb-6">Projek Saya</h2>
+      <p class="text-gray-300 mb-10">Beberapa karya yang pernah saya buat</p>
 
-            <!-- Our Profile Page -->
-            <section id="our-profile-page" class="min-h-[500px] text-center px-6 py-12 bg-black text-white">
-                <h2 class="text-3xl font-bold text-yellow-600 mb-4">Tentang Kita</h2>
-                <p class="max-w-2xl mx-auto text-gray-300 mb-6">
-                    <b>Mie Gacoan</b> adalah sebuah waralaba restoran mie pedas asal Indonesia yang didirikan pada awal tahun 2016 di kota Malang, Jawa Timur. 
-                    Berada di bawah naungan PT Pesta Pora Abadi, restoran ini menyasar kaum muda dengan konsep modern, menu mie dengan beberapa level kepedasan, dan harga yang bersahabat, mulai dari sekitar Rp 10.000-an.
-                </p>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
+        <div class="bg-white/10 border border-yellow-400 rounded-xl overflow-hidden shadow-lg hover:scale-105 transition">
+          <img src="assets/img/project1.jpg" alt="Project 1" class="w-full h-48 object-cover">
+          <div class="p-4 text-left">
+            <h3 class="text-xl font-semibold text-yellow-400">Project 1</h3>
+            <p class="text-gray-300 text-sm mt-2">Deskripsi singkat tentang proyek ini...</p>
+          </div>
+        </div>
 
-                <p class="max-w-2xl mx-auto text-gray-300">
-                    Nama “Gacoan” berasal dari Bahasa Jawa yang berarti “jagoan” atau “andalan”, mencerminkan visi Mie Gacoan untuk menjadi pilihan kuliner andalan bagi masyarakat Indonesia.
-                    Di bawah kepemimpinan Anton Kurniawan (Founder & CEO), Mie Gacoan tumbuh pesat hingga memiliki ratusan gerai di seluruh Indonesia dan merekrut lebih dari 10.000 karyawan.
-                </p>
-            </section>
+        <div class="bg-white/10 border border-yellow-400 rounded-xl overflow-hidden shadow-lg hover:scale-105 transition">
+          <img src="assets/img/project2.jpg" alt="Project 2" class="w-full h-48 object-cover">
+          <div class="p-4 text-left">
+            <h3 class="text-xl font-semibold text-yellow-400">Project 2</h3>
+            <p class="text-gray-300 text-sm mt-2">Deskripsi singkat tentang proyek ini...</p>
+          </div>
+        </div>
 
+        <div class="bg-white/10 border border-yellow-400 rounded-xl overflow-hidden shadow-lg hover:scale-105 transition">
+          <img src="assets/img/project3.jpg" alt="Project 3" class="w-full h-48 object-cover">
+          <div class="p-4 text-left">
+            <h3 class="text-xl font-semibold text-yellow-400">Project 3</h3>
+            <p class="text-gray-300 text-sm mt-2">Deskripsi singkat tentang proyek ini...</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="min-h-[500px] text-center px-6 py-12 bg-gradient-to-b from-black to-red-900 text-white">
+      <h2 class="text-3xl font-bold text-yellow-400 mb-4">Hubungi Saya</h2>
+      <p class="mb-6 text-gray-300">Punya ide kolaborasi atau mau sekadar menyapa? Kirim pesan di bawah ini!</p>
 
-            <!-- Our Menu Page -->
-            <section id="our-menu-page" class="min-h-[500px] text-center px-6 py-12 bg-black text-white">
-            <h2 class="text-3xl font-bold text-yellow-600 mb-6">Menu Mie Gacoan</h2>
-            <p class="max-w-2xl mx-auto text-gray-300 mb-10">
-                Pilih jagoanmu! Dari mie pedas legendaris sampai minuman segar dan camilan yang bikin nagih
-            </p>
+      <form id="messageForm">
+        <label for="name" class="block mb-2 font-semibold">Nama:</label>
+        <input type="text" id="name" name="name" class="border rounded p-2 mb-4 w-full max-w-[600px] mx-auto bg-white text-black" required>
 
-            <div class="max-w-3xl mx-auto text-left">
-                <!-- Makanan -->
-                <h3 class="text-2xl font-semibold text-red-500 mb-3">Makanan</h3>
-                <ol class="list-decimal list-inside text-gray-200 mb-8 space-y-1">
-                    <li>Mie Angel (tanpa pedas) : <span class="text-red-400 font-semibold">Rp 9.500</span></li>
-                    <li>Mie Setan Level 1-4 : <span class="text-red-400 font-semibold">Rp 9.500</span></li>
-                    <li>Mie Setan Level 6-8 : <span class="text-red-400 font-semibold">Rp 10.500</span></li>
-                    <li>Mie Iblis Level 1-4 : <span class="text-red-400 font-semibold">Rp 9.500</span></li>
-                    <li>Mie Iblis Level 6-8 : <span class="text-red-400 font-semibold">Rp 10.500</span></li>
-                </ol>
+        <label for="email" class="block mb-2 font-semibold">Email:</label>
+        <input type="email" id="email" name="email" class="border rounded p-2 mb-4 w-full max-w-[600px] mx-auto bg-white text-black" required>
 
-                <!-- Snack -->
-                <h3 class="text-2xl font-semibold text-red-500 mb-3">Snack</h3>
-                <ol class="list-decimal list-inside text-gray-200 mb-8 space-y-1">
-                    <li>Udang Rambutan : <span class="text-red-400 font-semibold">Rp 8.600</span></li>
-                    <li>Udang Keju : <span class="text-red-400 font-semibold">Rp 8.600</span></li>
-                    <li>Lumpia Udang : <span class="text-red-400 font-semibold">Rp 8.600</span></li>
-                    <li>Pangsit Goreng : <span class="text-red-400 font-semibold">Rp 9.500</span></li>
-                    <li>Siomay Ayam : <span class="text-red-400 font-semibold">Rp 8.600</span></li>
-                </ol>
+        <label for="message" class="block mb-2 font-semibold">Pesan:</label>
+        <textarea id="message" name="message" class="border rounded p-2 mb-4 w-full max-w-[600px] mx-auto bg-white text-black" rows="4" required></textarea>
 
-                <!-- Minuman -->
-                <h3 class="text-2xl font-semibold text-red-500 mb-3">Minuman</h3>
-                <ol class="list-decimal list-inside text-gray-200 space-y-1">
-                    <li>Es Genderuwo / Es Gobak Sodor : <span class="text-red-400 font-semibold">Rp 9.100</span></li>
-                    <li>Es Teklek : <span class="text-red-400 font-semibold">Rp 5.900</span></li>
-                    <li>Es Sluku Batok : <span class="text-red-400 font-semibold">Rp 5.900</span></li>
-                    <li>Es Petak Umpet : <span class="text-red-400 font-semibold">Rp 9.100</span></li>
-                    <li>Air Mineral : <span class="text-red-400 font-semibold">Rp 4.100</span></li>
-                </ol>
-            </div>
-            </section>
+        <div class="flex justify-center">
+          <button type="submit" class="bg-blue-500 hover:bg-blue-600 text-white rounded p-2 w-[150px] transition">
+            Kirim Pesan
+          </button>
+        </div>
+      </form>
 
+      <br />
+      <div id="resultBox" class="bg-white/10 border border-yellow-500 rounded-lg p-6 w-full max-w-[600px] text-left text-yellow-100 shadow-lg hidden mx-auto">
+        <!-- Hasil akan muncul di sini -->
+      </div>
+    </section>
+  </main>
 
-            <!-- Massage Us Page -->
-            <section id="massage-us-page" class="min-h-[500px] text-center px-6 py-12 bg-gradient-to-b from-black to-red-900 text-white">
-                    <header>
-                        <h2 class="text-3xl font-bold text-yellow-400 mb-4">Message Us</h2>
-                        <p class="mb-6 text-gray-300">Kirim pesan atau saranmu untuk Mie Gacoan, kami senang mendengarnya!</p>
-                    </header>
-              
-                <form id="messageForm">
-                    <label for="name" class="block mb-2 font-semibold">Name:</label>
-                    <input type="text" id="name" name="name" class="border rounded p-2 mb-4 w-full max-w-[600px] mx-auto bg-white text-black" required>
+  <!-- FOOTER -->
+  <footer>
+    <p class="text-center p-4 bg-gray-800 text-white">
+      &copy; 2025 Kirani. All rights reserved.
+    </p>
+  </footer>
 
-                    <label for="email" class="block mb-2 font-semibold">Email:</label>
-                    <input type="email" id="email" name="email" class="border rounded p-2 mb-4 w-full max-w-[600px] mx-auto bg-white text-black" required>
-
-                    <label for="jenis-kelamin" class="block mb-2 font-semibold text-center">Jenis Kelamin:</label>
-                    <div class="border rounded p-2 mb-4 bg-white text-black flex justify-center items-center space-x-6 w-full max-w-[600px] mx-auto">
-                        <label class="flex items-center space-x-1">
-                        <input type="radio" name="gender" value="Laki-Laki" required>
-                        <span>Laki-Laki</span>
-                        </label>
-                        <label class="flex items-center space-x-1">
-                        <input type="radio" name="gender" value="Perempuan">
-                        <span>Perempuan</span>
-                        </label>
-                    </div>
-
-                    <label for="message" class="block mb-2 font-semibold text-center">Message:</label>
-                    <textarea id="message" name="message"
-                        class="border rounded p-2 mb-4 w-full max-w-[600px] mx-auto bg-white text-black"
-                        rows="4" required></textarea>
-
-                    <div class="flex justify-center">
-                        <button type="submit"
-                        class="bg-blue-500 hover:bg-blue-600 text-white rounded p-2 w-[150px] transition">
-                        Send Message
-                        </button>
-                    </div>
-                </form>
-<br/>
-                <div id="resultBox"
-class="bg-white/10 border border-yellow-500 rounded-lg p-6 w-full max-w-[600px] text-left text-yellow-100 shadow-lg hidden mx-auto">
-
-                <!-- hasil akan muncul di sini -->
-                </div>
-            
-            </section>
-        </main> 
-        
-        <!-- footer -->
-        <footer>
-            <p class="text-center p-4 bg-gray-800 text-white">
-                &copy; 2024 Mie Gacoan. All rights reserved.
-        </footer>
-        <script src="js/script.js"></script>
-    </body>
+  <script src="js/script.js"></script>
+</body>
 </html>
